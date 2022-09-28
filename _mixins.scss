@@ -1,0 +1,24 @@
+@use 'vars' as v;
+
+@mixin bg($url){
+    background-image: url($url);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin btn(){
+    width: 100%;
+    font-family: v.$fontFamily;
+    font-size: v.$fontSize;
+    background-color: v.$VeryDarkViolet;
+    padding: 0.8em;
+    color: v.$White;
+    text-align: center;
+    border-radius: 0.4em;
+    border: none;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
